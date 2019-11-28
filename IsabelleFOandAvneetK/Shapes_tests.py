@@ -8,7 +8,7 @@
 #
 # Created:     24/11/2017
 #-------------------------------------------------------------------------------
-
+import os
 import sys
 import inspect
 
@@ -18,6 +18,8 @@ import inspect
 # For example:
 # import world_pop_explorer as wpe
 # reload(wpe)
+import Shapes as sh
+reload(sh)
 
 def main():
     # Find and call all functions that begin with "test"
@@ -43,8 +45,11 @@ def template_for_test_functions():
 # The name of the test functions needs to begin with "test"
 
 def test_example():
-    expected = ""
-    actual = ""
+    '''Test for circle area'''
+    expected = 19.63495
+    circle = sh.Circle()
+    circle.radius = 2.5
+    actual = round(circle.area, 5)
     print_test_results(test_example, expected, actual)
 
 # ------------------------------------------------------------------------------

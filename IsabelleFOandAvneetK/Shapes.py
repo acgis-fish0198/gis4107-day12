@@ -14,14 +14,26 @@
 def main():
     pass
 
-def func(params):
-    """Function documentation:
-       - What does function do?
-       - What is/are expected parameter value(s)?
-       - What does function return, if anything
-       - Example usage"""
+import math
 
-    pass
+class Circle (object):
+
+    @property
+    def radius(self):
+        pass
+
+    @radius.setter
+    def radius (self, radius):
+        self.__radius = radius
+
+    @property
+    def area(self):
+        return self.__radius**2 *math.pi
+
+
+
+
+
 
 if __name__ == '__main__':
     main()
