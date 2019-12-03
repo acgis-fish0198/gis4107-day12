@@ -45,12 +45,25 @@ def template_for_test_functions():
 # The name of the test functions needs to begin with "test"
 
 def test_example():
-    '''Test for circle area'''
+
     expected = 19.63495
     circle = sh.Circle()
     circle.radius = 2.5
     actual = round(circle.area, 5)
     print_test_results(test_example, expected, actual)
+
+def test_example():
+
+    expected = 25
+    square = mm.Square()
+    square.length = 5
+    actual = square.area
+    print_test_results(test_example, expected, actual)
+
+
+
+
+
 
 # ------------------------------------------------------------------------------
 # Test template helper functions.  Code in this section should not need to

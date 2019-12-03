@@ -32,8 +32,19 @@ class Circle (object):
 
 
 
+class Square (object):
 
+    @property
+    def length(self):
+        pass
 
+    @length.setter
+    def length (self, length):
+        self.__length = length
+
+    @property
+    def area(self):
+        return self.__length**2
 
 if __name__ == '__main__':
     main()
